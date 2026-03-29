@@ -1,0 +1,31 @@
+# Build output
+build/
+*.exe
+*.o
+*.a
+*.dll
+ 
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+ 
+# VS Code
+.vscode/
+ 
+# Wine
+*.wine
+ 
+# Debug symbols
+*.pdb
+*.ilk
+*.map
+ 
+# Crash dumps
+*.dmp
+*.core
