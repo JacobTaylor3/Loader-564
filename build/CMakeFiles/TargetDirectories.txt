@@ -1,3 +1,0 @@
-/home/hero/Documents/CS 564/Loader/build/CMakeFiles/myproject.dir
-/home/hero/Documents/CS 564/Loader/build/CMakeFiles/edit_cache.dir
-/home/hero/Documents/CS 564/Loader/build/CMakeFiles/rebuild_cache.dir

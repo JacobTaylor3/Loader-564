@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <wininet.h>
 
-int main(int argc, char *argv[])
+int main(void)
 {
     // 1. Open an internet session
     HINTERNET hInternet = InternetOpen(
