@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────
 #  Loader Makefile
-#  Cross-compiles from Linux → Windows
+#  Cross-compiles from Linux → Windows (static)
 #
 #  Targets:
 #    make         — build loader.exe
@@ -18,9 +18,13 @@ CC = x86_64-w64-mingw32-gcc
 
 # --- Flags ---
 CFLAGS  = -std=c11 -Wall -Wextra -O2
+# -static    : statically links MinGW runtime (libgcc, libmingwex)
+#              so the .exe doesn't need MinGW DLLs on the target machine.
+#              Note: wininet.dll is a Windows system DLL and will always
+#              be dynamically linked — this is unavoidable on any Windows build.
 # -mwindows  : suppress console window (pairs with SW_HIDE)
 # -lwininet  : WinINet (InternetOpen, InternetOpenUrl, etc.)
-LDFLAGS = -mwindows -lwininet
+LDFLAGS = -static -mwindows -lwininet
 
 # ─────────────────────────────────────────────
 #  Targets
