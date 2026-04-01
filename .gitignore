@@ -1,9 +1,4 @@
-# Build output
-build/
-*.exe
-*.o
-*.a
-*.dll
+
  
 # CMake generated
 CMakeCache.txt
