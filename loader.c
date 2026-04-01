@@ -4,7 +4,7 @@
 
 int main(void) {
     // 1. Open an internet session
-    print("Running");
+    printf("Running");
     HINTERNET hInternet = InternetOpenA("Mozilla/5.0", INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
     if (hInternet == NULL) {
         printf("[-] InternetOpen failed. Error: %lu\n", GetLastError());
